@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MiChofer | Términos, Contratos y Políticas</title>
-  <meta name="description" content="Contratos, términos, condiciones, reglas de conducta y políticas vigentes de MiChofer.">
+  <title>MiChofer | Legal</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +15,11 @@
 <body>
   <div class="cursor-glow"></div>
 
+  <div class="legal-lang-switch">
+    <button class="lang-btn active" data-language="es">ES</button>
+    <button class="lang-btn" data-language="en">EN</button>
+  </div>
+
   <main class="legal-page">
     <section class="legal-hero">
       <div class="hero-bg-orb orb-1"></div>
@@ -23,19 +27,15 @@
       <div class="hero-grid"></div>
 
       <div class="container legal-hero-content reveal">
-        <span class="eyebrow">MiChofer • Documentación legal</span>
-        <h1 class="legal-title">Términos, contratos y políticas de la plataforma</h1>
-        <p class="legal-subtitle">
-          Consulta las condiciones aplicables al uso de la plataforma MiChofer,
-          incluyendo contratos, reglas de conducta, seguridad, pagos, cancelaciones,
-          privacidad y responsabilidad.
-        </p>
+        <span class="eyebrow" data-section="hero" data-value="eyebrow"></span>
+        <h1 class="legal-title" data-section="hero" data-value="title"></h1>
+        <p class="legal-subtitle" data-section="hero" data-value="subtitle"></p>
 
         <div class="legal-badges">
-          <span>Contratos</span>
-          <span>Políticas</span>
-          <span>Seguridad</span>
-          <span>Privacidad</span>
+          <span data-section="hero" data-value="badge-1"></span>
+          <span data-section="hero" data-value="badge-2"></span>
+          <span data-section="hero" data-value="badge-3"></span>
+          <span data-section="hero" data-value="badge-4"></span>
         </div>
       </div>
     </section>
@@ -44,257 +44,166 @@
       <div class="container legal-layout">
 
         <aside class="legal-sidebar glass reveal">
-          <h3>Contenido</h3>
-          <a href="#contrato-usuarios">Contrato para Usuarios</a>
-          <a href="#contrato-conductores">Contrato para Conductores</a>
-          <a href="#reglas">Reglas de Conducta</a>
-          <a href="#politicas">Políticas Vigentes</a>
-          <a href="#privacidad">Privacidad</a>
-          <a href="#cookies">Cookies</a>
-          <a href="#aceptacion">Aceptación Electrónica</a>
-          <a href="#ley">Ley Aplicable</a>
+          <h3 data-section="sidebar" data-value="title"></h3>
+          <a href="#contrato-usuarios" data-section="sidebar" data-value="users"></a>
+          <a href="#contrato-conductores" data-section="sidebar" data-value="drivers"></a>
+          <a href="#reglas" data-section="sidebar" data-value="rules"></a>
+          <a href="#politicas" data-section="sidebar" data-value="policies"></a>
+          <a href="#privacidad" data-section="sidebar" data-value="privacy"></a>
+          <a href="#cookies" data-section="sidebar" data-value="cookies"></a>
+          <a href="#aceptacion" data-section="sidebar" data-value="acceptance"></a>
+          <a href="#ley" data-section="sidebar" data-value="law"></a>
         </aside>
 
         <div class="legal-docs">
 
           <article class="legal-card glass reveal" id="contrato-usuarios">
-            <span class="doc-label">Contrato 01</span>
-            <h2>Contrato de Uso de Plataforma y Acceso para Usuarios</h2>
+            <span class="doc-label" data-section="usersContract" data-value="label"></span>
+            <h2 data-section="usersContract" data-value="title"></h2>
+            <p data-section="usersContract" data-value="intro"></p>
 
-            <p>
-              El presente contrato regula los términos y condiciones aplicables al uso de la
-              plataforma digital operada por <strong>MICHOFER SOCIEDAD ANÓNIMA DE CAPITAL VARIABLE</strong>,
-              sociedad de nacionalidad salvadoreña, que permite a los usuarios acceder y utilizar
-              la aplicación y/o plataforma digital para solicitar, agendar viajes y ser conectados
-              con conductores disponibles.
-            </p>
+            <h3 data-section="usersContract" data-value="objectTitle"></h3>
+            <p data-section="usersContract" data-value="objectText"></p>
 
-            <h3>Objeto de la contratación</h3>
-            <p>
-              El Usuario reconoce y acepta que la Empresa actúa únicamente como intermediario
-              tecnológico. La Empresa no presta directamente el servicio de transporte, no es
-              transportista ni opera vehículos de transporte de pasajeros, salvo indicación expresa
-              en contrario.
-            </p>
-
-            <h3>Registro, cuenta y requisitos</h3>
+            <h3 data-section="usersContract" data-value="requirementsTitle"></h3>
             <ul>
-              <li>Ser mayor de edad y tener capacidad legal para contratar.</li>
-              <li>Proporcionar información veraz, completa y actualizada.</li>
-              <li>Aceptar procesos de verificación de identidad, teléfono o prevención de fraude.</li>
-              <li>Mantener la confidencialidad de sus credenciales.</li>
-              <li>Registrar un método de pago válido cuando aplique.</li>
-              <li>Usar la Plataforma conforme a la ley, al contrato y a las políticas vigentes.</li>
+              <li data-section="usersContract" data-value="req1"></li>
+              <li data-section="usersContract" data-value="req2"></li>
+              <li data-section="usersContract" data-value="req3"></li>
+              <li data-section="usersContract" data-value="req4"></li>
+              <li data-section="usersContract" data-value="req5"></li>
             </ul>
 
-            <h3>Servicios, solicitud y uso</h3>
-            <p>
-              El Usuario podrá solicitar o agendar viajes o encomiendas mediante la Plataforma,
-              indicando punto de recogida y destino cuando corresponda. La disponibilidad de
-              conductores dependerá de factores operativos como zona, demanda, tráfico, hora,
-              clima u otros elementos externos.
-            </p>
+            <h3 data-section="usersContract" data-value="servicesTitle"></h3>
+            <p data-section="usersContract" data-value="servicesText"></p>
 
-            <h3>Tarifas y pagos</h3>
-            <p>
-              La Plataforma podrá mostrar una tarifa estimada antes del viaje. La tarifa final
-              puede variar por distancia, tiempo, tráfico, rutas alternas, paradas, peajes,
-              cambios de destino, tiempo de espera u otros cargos aplicables.
-            </p>
-
-            <h3>Limitación de responsabilidad</h3>
-            <p>
-              El Usuario reconoce que la Empresa actúa como intermediario tecnológico y no presta
-              directamente el servicio de transporte ni entrega de encomiendas. En consecuencia,
-              la Empresa no será responsable por actos u omisiones del Conductor, daños durante
-              el viaje, objetos olvidados o contenido de encomiendas, en la medida permitida por la ley.
-            </p>
+            <h3 data-section="usersContract" data-value="paymentsTitle"></h3>
+            <p data-section="usersContract" data-value="paymentsText"></p>
           </article>
 
           <article class="legal-card glass reveal" id="contrato-conductores">
-            <span class="doc-label">Contrato 02</span>
-            <h2>Contrato de Uso de Plataforma y Licencia de Acceso para Conductores</h2>
+            <span class="doc-label" data-section="driversContract" data-value="label"></span>
+            <h2 data-section="driversContract" data-value="title"></h2>
+            <p data-section="driversContract" data-value="intro"></p>
 
-            <p>
-              Este contrato regula los términos aplicables al acceso y uso de la Plataforma por
-              parte del Conductor Afiliado, quien podrá recibir solicitudes de viaje, aceptarlas,
-              ejecutarlas y administrar información relacionada con los servicios prestados.
-            </p>
+            <h3 data-section="driversContract" data-value="relationTitle"></h3>
+            <p data-section="driversContract" data-value="relationText"></p>
 
-            <h3>Naturaleza de la relación</h3>
-            <p>
-              El presente contrato no crea relación laboral, de agencia, sociedad, franquicia o
-              representación entre el Operador y el Conductor. No existe subordinación,
-              exclusividad ni salario fijo. El Conductor decide cuándo conectarse y aceptar viajes.
-            </p>
-
-            <h3>Requisitos de afiliación</h3>
+            <h3 data-section="driversContract" data-value="requirementsTitle"></h3>
             <ul>
-              <li>Ser mayor de edad y tener capacidad legal para contratar.</li>
-              <li>Mantener licencia de conducir vigente.</li>
-              <li>Contar con vehículo en condiciones mecánicas y de seguridad adecuadas.</li>
-              <li>Contar con seguro vigente del vehículo.</li>
-              <li>Aceptar procesos de verificación documental, identidad y vehículo.</li>
-              <li>Mantener una cuenta única y personal.</li>
+              <li data-section="driversContract" data-value="req1"></li>
+              <li data-section="driversContract" data-value="req2"></li>
+              <li data-section="driversContract" data-value="req3"></li>
+              <li data-section="driversContract" data-value="req4"></li>
+              <li data-section="driversContract" data-value="req5"></li>
             </ul>
 
-            <h3>Obligaciones del conductor</h3>
+            <h3 data-section="driversContract" data-value="obligationsTitle"></h3>
             <ul>
-              <li>Prestar el servicio con diligencia, respeto y profesionalismo.</li>
-              <li>Cumplir las leyes y normas de tránsito aplicables.</li>
-              <li>No operar bajo efectos de alcohol, drogas o sustancias que afecten la conducción.</li>
-              <li>No cobrar montos fuera de la aplicación sin autorización.</li>
-              <li>No transportar objetos ilícitos, peligrosos, inflamables o prohibidos por ley.</li>
-              <li>Reportar incidentes por los canales oficiales.</li>
+              <li data-section="driversContract" data-value="obl1"></li>
+              <li data-section="driversContract" data-value="obl2"></li>
+              <li data-section="driversContract" data-value="obl3"></li>
+              <li data-section="driversContract" data-value="obl4"></li>
+              <li data-section="driversContract" data-value="obl5"></li>
             </ul>
-
-            <h3>Seguro y coberturas</h3>
-            <p>
-              El Conductor es responsable de mantener un seguro vigente del vehículo. La Empresa
-              no es aseguradora ni emite pólizas, salvo pacto expreso.
-            </p>
           </article>
 
           <article class="legal-card glass reveal" id="reglas">
-            <span class="doc-label">Seguridad</span>
-            <h2>Reglas de Conducta y Seguridad de la Plataforma</h2>
+            <span class="doc-label" data-section="rules" data-value="label"></span>
+            <h2 data-section="rules" data-value="title"></h2>
 
-            <h3>Principios generales</h3>
+            <h3 data-section="rules" data-value="principlesTitle"></h3>
             <ul>
-              <li>Legalidad.</li>
-              <li>Respeto mutuo.</li>
-              <li>Seguridad.</li>
-              <li>Buena fe.</li>
-              <li>Uso adecuado de la tecnología.</li>
+              <li data-section="rules" data-value="principle1"></li>
+              <li data-section="rules" data-value="principle2"></li>
+              <li data-section="rules" data-value="principle3"></li>
+              <li data-section="rules" data-value="principle4"></li>
+              <li data-section="rules" data-value="principle5"></li>
             </ul>
 
-            <h3>Conducta del usuario</h3>
+            <h3 data-section="rules" data-value="userConductTitle"></h3>
             <ul>
-              <li>Mantener trato respetuoso hacia conductores y terceros.</li>
-              <li>No incurrir en acoso, amenazas, violencia o discriminación.</li>
-              <li>No dañar el vehículo ni poner en riesgo al conductor.</li>
-              <li>No consumir ni portar sustancias ilícitas durante el viaje.</li>
-              <li>Proporcionar información veraz.</li>
-              <li>Estar listo en el punto de recogida dentro del tiempo establecido.</li>
+              <li data-section="rules" data-value="user1"></li>
+              <li data-section="rules" data-value="user2"></li>
+              <li data-section="rules" data-value="user3"></li>
+              <li data-section="rules" data-value="user4"></li>
+              <li data-section="rules" data-value="user5"></li>
             </ul>
 
-            <h3>Conducta del conductor</h3>
+            <h3 data-section="rules" data-value="driverConductTitle"></h3>
             <ul>
-              <li>Prestar el servicio con diligencia y profesionalismo.</li>
-              <li>Garantizar condiciones seguras del vehículo.</li>
-              <li>Cumplir normas de tránsito.</li>
-              <li>No operar bajo efectos de alcohol o drogas.</li>
-              <li>No permitir el uso de su cuenta por terceros.</li>
-              <li>No cobrar fuera de la Plataforma sin autorización.</li>
+              <li data-section="rules" data-value="driver1"></li>
+              <li data-section="rules" data-value="driver2"></li>
+              <li data-section="rules" data-value="driver3"></li>
+              <li data-section="rules" data-value="driver4"></li>
+              <li data-section="rules" data-value="driver5"></li>
             </ul>
 
-            <h3>Objetos prohibidos</h3>
-            <p>Está prohibido transportar:</p>
+            <h3 data-section="rules" data-value="prohibitedTitle"></h3>
             <ul>
-              <li>Sustancias ilícitas.</li>
-              <li>Armas.</li>
-              <li>Material peligroso o inflamable.</li>
-              <li>Dinero en efectivo.</li>
-              <li>Cualquier objeto prohibido por ley.</li>
+              <li data-section="rules" data-value="prohibited1"></li>
+              <li data-section="rules" data-value="prohibited2"></li>
+              <li data-section="rules" data-value="prohibited3"></li>
+              <li data-section="rules" data-value="prohibited4"></li>
+              <li data-section="rules" data-value="prohibited5"></li>
             </ul>
           </article>
 
           <article class="legal-card glass reveal" id="politicas">
-            <span class="doc-label">Políticas</span>
-            <h2>Políticas Vigentes de la Plataforma</h2>
+            <span class="doc-label" data-section="policies" data-value="label"></span>
+            <h2 data-section="policies" data-value="title"></h2>
 
-            <h3>Naturaleza de la plataforma</h3>
-            <p>
-              La Plataforma actúa exclusivamente como intermediario tecnológico y facilitador de
-              conexión entre usuarios y conductores. No presta directamente el servicio de transporte.
-            </p>
+            <h3 data-section="policies" data-value="natureTitle"></h3>
+            <p data-section="policies" data-value="natureText"></p>
 
-            <h3>Política de tarifas y pagos</h3>
+            <h3 data-section="policies" data-value="paymentsTitle"></h3>
             <ul>
-              <li>Las tarifas pueden variar por distancia, tiempo, tráfico, esperas o cambios en el viaje.</li>
-              <li>Podrán aplicarse cargos por cancelaciones, tiempo de espera, daños o limpieza.</li>
-              <li>Los pagos deben realizarse únicamente por medios autorizados.</li>
+              <li data-section="policies" data-value="payment1"></li>
+              <li data-section="policies" data-value="payment2"></li>
+              <li data-section="policies" data-value="payment3"></li>
             </ul>
 
-            <h3>Política de cancelaciones</h3>
+            <h3 data-section="policies" data-value="cancelTitle"></h3>
             <ul>
-              <li>El Usuario puede cancelar antes del inicio del viaje.</li>
-              <li>Cancelaciones tardías pueden generar cargos.</li>
-              <li>Inasistencias pueden generar penalizaciones.</li>
-              <li>El Conductor puede cancelar por razones de seguridad.</li>
+              <li data-section="policies" data-value="cancel1"></li>
+              <li data-section="policies" data-value="cancel2"></li>
+              <li data-section="policies" data-value="cancel3"></li>
+              <li data-section="policies" data-value="cancel4"></li>
             </ul>
 
-            <h3>Suspensión y terminación</h3>
-            <p>La Plataforma podrá suspender o cancelar cuentas por:</p>
-            <ul>
-              <li>Incumplimiento contractual.</li>
-              <li>Fraude o uso indebido.</li>
-              <li>Riesgos de seguridad.</li>
-              <li>Información falsa o incompleta.</li>
-              <li>Conducta inapropiada.</li>
-              <li>Transporte de objetos ilícitos.</li>
-            </ul>
-
-            <h3>Reclamos</h3>
-            <p>
-              Los reclamos deben realizarse por canales oficiales. El plazo máximo para objeciones
-              de cobro es de 72 horas. La Plataforma evaluará los casos conforme a la evidencia disponible.
-            </p>
+            <h3 data-section="policies" data-value="claimsTitle"></h3>
+            <p data-section="policies" data-value="claimsText"></p>
           </article>
 
           <article class="legal-card glass reveal" id="privacidad">
-            <span class="doc-label">Privacidad</span>
-            <h2>Política de Privacidad</h2>
-
-            <p>
-              Los datos personales serán utilizados únicamente para la ejecución del servicio,
-              seguridad, soporte, prevención de fraude, resolución de disputas y cumplimiento legal.
-            </p>
-
+            <span class="doc-label" data-section="privacy" data-value="label"></span>
+            <h2 data-section="privacy" data-value="title"></h2>
+            <p data-section="privacy" data-value="text"></p>
             <ul>
-              <li>Los datos no deberán utilizarse para fines personales no autorizados.</li>
-              <li>Está prohibido contactar fuera de la Plataforma sin autorización.</li>
-              <li>El Usuario podrá ejercer derechos de acceso, rectificación y actualización.</li>
-              <li>La Plataforma podrá colaborar con autoridades cuando sea requerido por ley.</li>
+              <li data-section="privacy" data-value="item1"></li>
+              <li data-section="privacy" data-value="item2"></li>
+              <li data-section="privacy" data-value="item3"></li>
+              <li data-section="privacy" data-value="item4"></li>
             </ul>
           </article>
 
           <article class="legal-card glass reveal" id="cookies">
-            <span class="doc-label">Cookies</span>
-            <h2>Política de Cookies</h2>
-
-            <p>
-              El sitio web podrá utilizar cookies o tecnologías similares para mejorar la experiencia,
-              analizar el uso del sitio, recordar preferencias y reforzar la seguridad de la navegación.
-            </p>
-
-            <p>
-              El usuario puede configurar su navegador para rechazar cookies, aunque algunas funciones
-              del sitio podrían verse limitadas.
-            </p>
+            <span class="doc-label" data-section="cookies" data-value="label"></span>
+            <h2 data-section="cookies" data-value="title"></h2>
+            <p data-section="cookies" data-value="text1"></p>
+            <p data-section="cookies" data-value="text2"></p>
           </article>
 
           <article class="legal-card glass reveal" id="aceptacion">
-            <span class="doc-label">Aceptación</span>
-            <h2>Aceptación Electrónica</h2>
-
-            <p>
-              Los contratos y políticas se perfeccionan mediante aceptación electrónica, sin necesidad
-              de firma manuscrita. Se entenderá que el usuario o conductor acepta los documentos al
-              registrarse, activar su cuenta, solicitar viajes, conectarse, aceptar servicios o utilizar
-              cualquier funcionalidad habilitada por la Plataforma.
-            </p>
+            <span class="doc-label" data-section="acceptance" data-value="label"></span>
+            <h2 data-section="acceptance" data-value="title"></h2>
+            <p data-section="acceptance" data-value="text"></p>
           </article>
 
           <article class="legal-card glass reveal" id="ley">
-            <span class="doc-label">Jurisdicción</span>
-            <h2>Ley Aplicable</h2>
-
-            <p>
-              Estos contratos, términos y políticas se rigen por la legislación de la República de
-              El Salvador. Cualquier controversia será sometida a la competencia de los tribunales
-              competentes de la ciudad de San Salvador, salvo acuerdo escrito distinto entre las partes.
-            </p>
+            <span class="doc-label" data-section="law" data-value="label"></span>
+            <h2 data-section="law" data-value="title"></h2>
+            <p data-section="law" data-value="text"></p>
           </article>
 
         </div>
@@ -302,9 +211,7 @@
     </section>
   </main>
 
-  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
-    ↑
-  </button>
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
 
   <script src="legal.js"></script>
 </body>
